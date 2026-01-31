@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>matters</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: #0f5f53;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .container {
+      padding: 24px;
+      max-width: 640px;
+      width: 100%;
+      opacity: 0;
+      transform: translateY(6px);
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+
+    /* Brand */
+    .brand {
+      font-style: italic;
+      font-weight: 500;
+      font-size: clamp(3.2rem, 8vw, 4.1rem);
+      letter-spacing: 0.4px;
+      margin-bottom: 18px;
+    }
+
+    /* Meta */
+    .meta {
+      font-size: clamp(0.9rem, 2.8vw, 1rem);
+      font-weight: 400;
+      opacity: 0.9;
+      margin-bottom: 10px;
+    }
+
+    /* Tagline */
+    .tagline {
+      font-size: clamp(1rem, 3.2vw, 1.1rem);
+      font-weight: 400;
+      margin-bottom: 28px;
+    }
+
+    /* Instagram */
+    .instagram {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .instagram a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.95rem;
+      opacity: 0.85;
+      transition: opacity 0.2s ease;
+    }
+
+    .instagram a:hover {
+      opacity: 1;
+    }
+
+    .instagram svg {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: #ffffff;
+      stroke-width: 1.8;
+    }
+
+    /* Location */
+    .location {
+      font-size: 0.85rem;
+      opacity: 0.6;
+      letter-spacing: 0.3px;
+    }
+
+    /* Fade-in */
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Mobile polish */
+    @media (max-width: 480px) {
+      .brand {
+        margin-bottom: 14px;
+      }
+
+      .tagline {
+        margin-bottom: 24px;
+      }
+
+      .instagram {
+        margin-bottom: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="brand">matters</div>
+    <div class="meta">Media / News Community</div>
+    <div class="tagline">Only what matters – Briefly Explained</div>
+
+    <div class="instagram">
+      <a href="https://www.instagram.com/matters.brief/" target="_blank" rel="noopener noreferrer">
+        <!-- Instagram Icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <circle cx="12" cy="12" r="4"></circle>
+          <circle cx="17.5" cy="6.5" r="1"></circle>
+        </svg>
+        @matters.brief
+      </a>
+    </div>
+
+    <div class="location">Jodhpur, Rajasthan, India</div>
+  </div>
+</body>
+</html>
