@@ -1,136 +1,132 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>matters</title>
 
-        <!-- Font -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap"
-            rel="stylesheet"
-        />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>matters</title>
 
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet" />
 
-            body {
-                min-height: 100vh;
-                background-color: #0f5f53;
-                color: #ffffff;
-                font-family: "Inter", sans-serif;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-            }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-            .container {
-                padding: 24px;
-                max-width: 640px;
-                width: 100%;
-                opacity: 0;
-                transform: translateY(6px);
-                animation: fadeIn 0.8s ease-out forwards;
-            }
+        body {
+            min-height: 100vh;
+            background-color: #004aad;
+            color: #ffffff;
+            font-family: "Inter", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-            /* Brand */
-            .brand {
-                font-style: italic;
-                font-weight: 500;
-                font-size: clamp(3.2rem, 8vw, 4.1rem);
-                letter-spacing: 0.4px;
-                margin-bottom: 18px;
-            }
+        .container {
+            padding: 24px;
+            max-width: 640px;
+            width: 100%;
+            opacity: 0;
+            transform: translateY(6px);
+            animation: fadeIn 0.8s ease-out forwards;
+        }
 
-            /* Meta */
-            .meta {
-                font-size: clamp(0.9rem, 2.8vw, 1rem);
-                font-weight: 400;
-                opacity: 0.9;
-                margin-bottom: 10px;
-            }
+        /* Brand */
+        .brand {
+            font-style: italic;
+            font-weight: 500;
+            font-size: clamp(3.2rem, 8vw, 4.1rem);
+            letter-spacing: 0.4px;
+            margin-bottom: 18px;
+        }
 
-            /* Tagline */
-            .tagline {
-                font-size: clamp(1rem, 3.2vw, 1.1rem);
-                font-weight: 400;
-                margin-bottom: 28px;
-            }
+        /* Meta */
+        .meta {
+            font-size: clamp(0.9rem, 2.8vw, 1rem);
+            font-weight: 400;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
 
-            /* Instagram */
-            .instagram {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 28px;
-            }
+        /* Tagline */
+        .tagline {
+            font-size: clamp(1rem, 3.2vw, 1.1rem);
+            font-weight: 400;
+            margin-bottom: 28px;
+        }
 
-            .instagram a {
-                color: #ffffff;
-                text-decoration: none;
-                font-size: 0.95rem;
-                opacity: 0.85;
-                transition: opacity 0.2s ease;
-            }
+        /* Instagram */
+        .instagram {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 28px;
+        }
 
-            .instagram a:hover {
+        .instagram a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            opacity: 0.85;
+            transition: opacity 0.2s ease;
+        }
+
+        .instagram a:hover {
+            opacity: 1;
+        }
+
+        /* Location */
+        .location {
+            font-size: 0.85rem;
+            opacity: 0.6;
+            letter-spacing: 0.3px;
+        }
+
+        /* Fade-in */
+        @keyframes fadeIn {
+            to {
                 opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile polish */
+        @media (max-width: 480px) {
+            .brand {
+                margin-bottom: 14px;
             }
 
-            /* Location */
-            .location {
-                font-size: 0.85rem;
-                opacity: 0.6;
-                letter-spacing: 0.3px;
+            .tagline {
+                margin-bottom: 24px;
             }
 
-            /* Fade-in */
-            @keyframes fadeIn {
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
+            .instagram {
+                margin-bottom: 24px;
             }
+        }
+    </style>
+</head>
 
-            /* Mobile polish */
-            @media (max-width: 480px) {
-                .brand {
-                    margin-bottom: 14px;
-                }
+<body>
+    <div class="container">
+        <div class="brand">matters</div>
+        <div class="meta">Media/News Community</div>
+        <div class="tagline">Only what matters – Briefly Explained</div>
 
-                .tagline {
-                    margin-bottom: 24px;
-                }
-
-                .instagram {
-                    margin-bottom: 24px;
-                }
-            }
-        </style>
-    </head>
-
-    <body>
-        <div class="container">
-            <div class="brand">matters</div>
-            <div class="meta">Media / News Community</div>
-            <div class="tagline">Only what matters – Briefly Explained</div>
-
-            <div class="instagram">
-                <a
-                    href="https://www.instagram.com/matters.brief/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    @matters.brief
-                </a>
-            </div>
-
-            <div class="location">Jodhpur, Rajasthan, India</div>
+        <div class="instagram">
+            <a href="https://www.instagram.com/matters.brief/" target="_blank" rel="noopener noreferrer">
+                @matters.brief
+            </a>
         </div>
-    </body>
+
+        <div class="location">Jodhpur, Rajasthan, India</div>
+    </div>
+</body>
+
 </html>
